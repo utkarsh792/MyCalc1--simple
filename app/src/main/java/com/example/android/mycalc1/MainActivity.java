@@ -164,6 +164,7 @@ public class MainActivity extends AppCompatActivity {
                 else if(flag==6)
                     result= result*1;
                 result=Math.sqrt(result);
+                z=Double.toString(result);
                 disp.setText("");
                 dm.setText(result+"");
                 x=Double.toString(result);
@@ -207,6 +208,7 @@ public class MainActivity extends AppCompatActivity {
                     result= result*1;
                 else if(flag==7)
                     result=result%a;
+
                 dm.setText(result+"");
                 disp.setText(disp.getText()+"%");
                 flag = 7;
@@ -377,7 +379,7 @@ public class MainActivity extends AppCompatActivity {
 
                         disp.setText(disp.getText() + "-");
                     } else {
-                        
+
                         if (sign == 0) {
                             a = Double.parseDouble(x);
                             x = "";
